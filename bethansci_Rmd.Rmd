@@ -4,6 +4,9 @@ author: "BY"
 date: "`r Sys.Date()`"
 output: html_document
 ---
+CradletoGraveR:
+https://www.youtube.com/watch?v=9Jqvaoeh1W4
+
 ```{r}
 install.packages("blogdown")
 ```
@@ -92,5 +95,16 @@ blogdown::check_site()
 blogdown::new_post(title = "Hi Hugo", 
                      ext = '.Rmarkdown', 
                      subdir = "post")
+```
+
+Initial commit via Shell
+betha@BY-Swift MINGW64 ~/Documents/BY_Data_Science_Portfolio/Portfolio/Blogdown/bethansci (main)
+$ 
+```{bash}
+git config --global user.email "byoung34@ed.ac.uk"
+
+git config --global user.name "bcyoung"
+
+git add -A
 ```
 

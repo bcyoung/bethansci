@@ -1,0 +1,96 @@
+---
+title: "bethansci"
+author: "BY"
+date: "`r Sys.Date()`"
+output: html_document
+---
+```{r}
+install.packages("blogdown")
+```
+
+```{r}
+packageVersion("blogdown")
+```
+Start the Hugo server using blogdown::serve_site() (only once due to the magic of LiveReload).
+
+```{r}
+library(blogdown)
+new_site(theme = "wowchemy/starter-academic")
+```
+```{r}
+blogdown::new_post(title = "Hi Hugo", 
+                     ext = '.Rmarkdown', 
+                     subdir = "post")
+```
+```{r}
+blogdown::config_Rprofile() 
+
+options(
+  blogdown.serve_site.startup = TRUE,
+  blogdown.knit.on_save = TRUE,     
+  blogdown.author = "Bethan Young",
+  blogdown.ext = ".Rmarkdown",      
+  blogdown.subdir = "post"          
+)
+```
+After a restart
+```{r}
+serve_site()
+```
+
+```{r}
+file.edit(".gitignore")
+```
+
+```{r}
+blogdown::check_gitignore()
+```
+```{r}
+blogdown::check_content()
+```
+
+change the baseurl there to match where Netlify is publishing your site
+
+```{r}
+rstudioapi::navigateToFile("config/_default/config.yaml", line = 3)
+```
+
+if exists, opens; if not, creates new
+```{r}
+blogdown::config_netlify()
+```
+
+Anytime you change your subdomain name, you need to update the baseurl in your config.toml file (so I changed mine to baseurl = “ https://apreshill.netlify.com/").
+
+Fonts & Themes
+```{r}
+rstudioapi::navigateToFile("config/_default/params.yaml")
+```
+
+Menus
+```{r}
+rstudioapi::navigateToFile("config/_default/menus.yaml")
+```
+
+
+Removing widgets
+```{r}
+rstudioapi::navigateToFile("content/home/hero.md", line = 5, column = 10)
+```
+
+Edit widgets
+```{r}
+rstudioapi::navigateToFile("content/authors/admin/_index.md")
+```
+
+Check site
+```{r}
+blogdown::check_site()
+```
+
+```{r}
+blogdown::new_post(title = "Hi Hugo", 
+                     ext = '.Rmarkdown', 
+                     subdir = "post")
+```
+

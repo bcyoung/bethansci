@@ -52,6 +52,8 @@ blogdown::check_gitignore()
 blogdown::check_content()
 ```
 
+https://www.apreshill.com/blog/2020-12-new-year-new-blogdown/#step-6-sculpt-site
+
 change the baseurl there to match where Netlify is publishing your site
 
 ```{r}
@@ -64,6 +66,11 @@ blogdown::config_netlify()
 ```
 
 Anytime you change your subdomain name, you need to update the baseurl in your config.toml file (so I changed mine to baseurl = “ https://apreshill.netlify.com/").
+
+```{r}
+rstudioapi::navigateToFile("config/_default/params.yaml")
+```
+
 
 Fonts & Themes
 ```{r}
@@ -106,5 +113,9 @@ git config --global user.email "byoung34@ed.ac.uk"
 git config --global user.name "bcyoung"
 
 git add -A
+```
+
+```{bash}
+
 ```
 

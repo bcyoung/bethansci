@@ -1,5 +1,5 @@
 ---
-bio: Researcher and aspiring data scientist.
+bio: Synthetic biology researcher and aspiring data scientist.
 education:
   courses:
   - course: PhD in Pharmaceutical Sciences

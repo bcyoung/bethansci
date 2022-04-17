@@ -57,6 +57,11 @@ https://www.apreshill.com/blog/2020-12-new-year-new-blogdown/#step-6-sculpt-site
 change the baseurl there to match where Netlify is publishing your site
 
 ```{r}
+blogdown::serve_site()
+```
+
+
+```{r}
 rstudioapi::navigateToFile("config/_default/config.yaml", line = 3)
 ```
 

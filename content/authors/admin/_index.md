@@ -40,5 +40,3 @@ superuser: true
 title: Bethan Young
 ---
 Bethan Young is currently a researcher in synthetic biology at the MRC Human Genetics Unit and an aspiring data scientist. 
-
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/BY_CV.pdf" "newtab" >}}CV{{< /staticref >}}.

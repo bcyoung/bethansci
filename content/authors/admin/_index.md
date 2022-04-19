@@ -8,7 +8,7 @@ education:
   - course: BSc (Hons) Medical Pharmacology
     institution: Cardiff University
     year: 2015
-email: ""
+email: youngbc94@gmail.com
 highlight_name: true
 interests:
 - Statistics

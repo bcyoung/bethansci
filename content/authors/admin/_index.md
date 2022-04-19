@@ -37,6 +37,6 @@ social:
   icon_pack: fab
   link: https://www.linkedin.com/youngbc
 superuser: true
-title: Bethan Young
+title: Data Science Portfolio & Blog
 ---
 Bethan Young is currently a researcher in synthetic biology at the MRC Human Genetics Unit and an aspiring data scientist. 

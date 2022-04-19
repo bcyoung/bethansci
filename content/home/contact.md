@@ -20,8 +20,8 @@ content:
   
   # Email form provider
   form:
-    provider: formspree
-    formspree:
+    provider: gmail
+    gmail:
       id: test
     netlify:
       # Enable CAPTCHA challenge to reduce spam?

@@ -1,5 +1,5 @@
 ---
-bio: Synthetic biology researcher and aspiring data scientist.
+bio: Synthetic biology researcher and aspiring data scientist. Please note this site is a work-in-progress.
 education:
   courses:
   - course: PhD in Pharmaceutical Sciences
@@ -15,8 +15,8 @@ interests:
 - Data Visualisation
 - Machine Learning
 organizations:
-- name: University of Edinburgh
-  role: Research Assistant
+- name: 
+  role: Researcher
 social:
 - icon: envelope
   icon_pack: fas
